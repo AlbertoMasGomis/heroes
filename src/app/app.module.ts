@@ -11,10 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     AuthRoutingModule,
     SharedModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
