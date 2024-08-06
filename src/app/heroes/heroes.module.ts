@@ -10,6 +10,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './pages/components/card/card.component';
 import { HeroImagePipe } from './pipes/heroImage.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,12 +22,13 @@ import { HeroImagePipe } from './pipes/heroImage.pipe';
     SearchPageComponent,
     CardComponent,
     //Pipe
-    HeroImagePipe
+    HeroImagePipe,
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class HeroesModule { }
